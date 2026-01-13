@@ -33,19 +33,12 @@ You can install Oh my tmux! at any of the following locations:
 - `$XDG_CONFIG_HOME/tmux`
 - `~/.config/tmux`
 
-**Automatic installation**
-
-Copy the following command and paste it in your terminal.
-```
-curl -fsSL "https://github.com/gpakosz/.tmux/raw/refs/heads/master/install.sh#$(date +%s)" | bash
-```
-
-**Manual installation in `~`**
+Installing in `~` (command overridden):
 ```
 $ cd
-$ git clone --single-branch https://github.com/gpakosz/.tmux.git
+$ git clone https://github.com/pradigunara/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
+$ ln -s -f .tmux/.tmux.conf.local
 ```
 
 **Manual installation in `$XDG_CONFIG_HOME/tmux`**
